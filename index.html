@@ -7,79 +7,86 @@
         Shopping cart
     </title>
     <link rel="stylesheet" href="./assets/css/index.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 
 <body>
-    <header id="header">
-        <div class="container-fluid">
-            <div class="header content">
+    <div class="wrapper">
+        <header class="header-content">
+            <div class="title">
                 <h1 class="page-title">Shopping cart</h1>
-                <nav class="nav-items">
-                    <ul>
-                        <li>
-                            <i class="material-icons">check</i>
-                            <a href="">Billing Address</a>
-                        </li>
-                        <li>
-                            <i class="material-icons">check</i>
-                            <a href="">Delivery</a>
-                        </li>
-                        <li>
-                            <a href="">Payment</a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
-        </div>
-    </header>
-    <main id="main">
-        <section class="block">
-            <div class="shopping-item">
-                <article>
-                    <h2>Lounge furniture set</h2>
+            <nav class="nav-items">
+                <ul>
+                    <li class="inactive">
+                        <i class="material-icons">check</i>
+                        <a href="">Billing Address</a>
+                    </li>
+                    <li class="inactive">
+                        <i class="material-icons">check</i>
+                        <a href="">Delivery</a>
+                    </li>
+                    <li class="active">
+                        <a href="">Payment</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main">
+            <div class="shop-item">
+                <h2>Lounge furniture set</h2>
+                <div class="items">
                     <div class="count">
                         <i class="material-icons">remove</i>
                         <p>1 item / grey</p>
                         <i class="material-icons">add</i>
-                        <p class="amount">1 999.99
-                            <span class="currency">pln</span>
-                        </p>
                     </div>
-                    <figure class="couch-container">
-                        <img src="./assets/images/round-swivel-gray-chair.png" alt="swivel chair">
-                    </figure>
-                </article>
-                <aside class="payment-method">
+                    <p class="amount">
+                        1 999.99
+                        <span class="currency">pln</span>
+                    </p>
+                </div>
+                <figure class="couch-container">
+                    <img src="./assets/images/round-swivel-gray-chair.png" alt="swivel chair" />
+                </figure>
+            </div>
+            <div class="payout">
+                <div class="container">
                     <h3>Choose payment method</h3>
                     <div class="options">
                         <form action="">
                             <div class="card">
-                                <input type="radio" id="apple" name="method" value="apple" checked>
+                                <input type="radio" id="apple" name="method" value="apple" checked />
                                 <label for="apple">
-                                    <img src="./assets/images/apple-pay.svg" class="apple-pay-icon" />
-                                    <span class="text">Pay</span>
-                                </label>
+                    <img
+                      src="./assets/images/apple-pay.svg"
+                      class="apple-pay-icon"
+                    />
+                    <span class="text">Pay</span>
+                  </label>
                                 <div class="description">
                                     <p class="name">Apple Pay</p>
                                     <p class="information">Use your Apple Pay Wallet</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <input type="radio" id="visa" name="method" value="visa">
+                                <input type="radio" id="visa" name="method" value="visa" />
                                 <label for="visa">
-                                    <img src="./assets/images/visa.svg" class="visa-icon" />
-                                </label>
+                    <img src="./assets/images/visa.svg" class="visa-icon" />
+                  </label>
                                 <div class="description">
                                     <p class="name">Credit card</p>
                                     <p class="information">Enter your credit data</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <input type="radio" id="visa" name="method" value="cash">
+                                <input type="radio" id="visa" name="method" value="cash" />
                                 <label for="cash">
-                                    <img src="./assets/images/cash-on-delivery.svg" class="cash-icon" />
-                                </label>
+                    <img
+                      src="./assets/images/cash-on-delivery.svg"
+                      class="cash-icon"
+                    />
+                  </label>
                                 <div class="description">
                                     <p class="name">Cash on delivery</p>
                                     <p class="information">pay the courier during delivery</p>
@@ -87,17 +94,19 @@
                             </div>
                             <div class="action">
                                 <button type="button">
-                                    Pay now
-                                    <img src="./assets/images/right-arrow.svg" class="arrow-icon" />
-                                </button>
+                    Pay now
+                    <img
+                      src="./assets/images/right-arrow.svg"
+                      class="arrow-icon"
+                    />
+                  </button>
                             </div>
                         </form>
-
                     </div>
-                </aside>
+                </div>
             </div>
-        </section>
-    </main>
+        </main>
+    </div>
 </body>
 
 </html>
