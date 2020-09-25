@@ -182,6 +182,7 @@ p {
 
 figure {
     margin: 0px;
+    margin-top: -95px;
     max-width: 30px;
     position: relative;
     left: -50px;
