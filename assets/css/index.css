@@ -218,10 +218,10 @@ figure {
     flex-direction: row;
     height: 33px;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 25px 35px;
     margin-bottom: 17px;
-    box-shadow: 0 1px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.14), 0 3px 8px 0 rgba(0, 0, 0, 0.12);
 }
 
 .card:not(.active) {
