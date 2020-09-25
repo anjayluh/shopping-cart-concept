@@ -278,6 +278,7 @@ label.icon {
 .card .description .information {
     font-size: 11px;
     color: #c9ced2;
+    margin-top: 5px;
 }
 
 .action {
