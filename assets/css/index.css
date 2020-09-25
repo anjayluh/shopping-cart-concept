@@ -337,7 +337,7 @@ label.icon {
         margin-right: 20px;
     }
     li.active:after {
-        left: 20%;
+        left: 15%;
         width: 20%;
     }
     main {
