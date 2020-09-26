@@ -366,8 +366,8 @@ label.icon {
         margin-right: 20px;
     }
     li.active:after {
-        left: 12%;
-        width: 22%;
+        left: 17%;
+        width: 30%;
     }
     main {
         flex-direction: column;
@@ -391,7 +391,7 @@ label.icon {
         margin-right: 20px;
     }
     li.active:after {
-        left: 12%;
+        left: 12s%;
         width: 20%;
     }
     .card {
