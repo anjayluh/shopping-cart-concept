@@ -103,6 +103,7 @@ li.active:after {
     position: absolute;
     content: "";
     border-bottom: 3px solid #525252;
+    border-radius: 10px;
     width: 85%;
     transform: translateX(-50%);
     bottom: -1px;
