@@ -253,35 +253,23 @@ figure {
     box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.2), 0 0px 0px 0 #eff4f8, 0 0px 3px 0 #eff4f8;
 }
 
-.card input[type="radio"] {
-    display: none;
+.card input {
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
-.card input[type="radio"]+*::before {
-    content: "";
-    display: inline-block;
-    width: 0.8rem;
-    height: 0.8rem;
-    margin-bottom: 9px;
-    margin-left: -40px;
-    margin-right: 28px;
+.card.active .radio__control {
+    margin-top: 5px;
+    display: block;
+    width: 1em;
+    height: 1em;
     border-radius: 50%;
-    border-style: solid;
-    border-width: 0.15rem;
-    border-color: #3b3b3b;
+    border: 0.1em solid currentColor;
 }
 
-.card input:not(.active)[type="radio"]+*::before {
-    border-color: #a4abb2;
-}
-
-.card input[type="radio"]:checked+*::before {
-    background: radial-gradient( #3b3b3b 0%, #3b3b3b 40%, transparent 50%, transparent);
-    border-color: #3b3b3b;
-}
-
-.card input[type="radio"]:checked+* {
-    color: #3b3b3b;
+.card.active input:checked+.radio__control {
+    background: radial-gradient(currentcolor 50%, rgba(255, 0, 0, 0) 51%);
 }
 
 label img {
@@ -316,6 +304,7 @@ label.icon {
 }
 
 .pay {
+    cursor: pointer;
     font-size: 18px;
     padding: 12px 54px;
     margin-left: auto;
@@ -327,6 +316,11 @@ label.icon {
     background-color: #3b3b3b;
     border-radius: 26px;
     border-style: none;
+}
+
+.pay:hover {
+    opacity: 1;
+    background-color: #595853;
 }
 
 .pay:focus {

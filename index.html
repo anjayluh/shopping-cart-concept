@@ -8,6 +8,17 @@
     </title>
     <link rel="stylesheet" href="./assets/css/index.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.card').click(function() {
+                $('.card.active').removeClass("active");
+                $(this).addClass("active");
+                $('.card input').attr('checked', false)
+                $('.card.active input').attr('checked', true)
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -57,6 +68,7 @@
                         <form action="">
                             <div class="card active">
                                 <input type="radio" id="apple" name="method" value="apple" checked />
+                                <span class="radio__control"></span>
                                 <label for="apple" class="icon apple">
                     <img
                       src="./assets/images/apple-pay.svg"
@@ -70,6 +82,7 @@
                             </div>
                             <div class="card">
                                 <input type="radio" id="visa" name="method" value="visa" />
+                                <span class="radio__control"></span>
                                 <label for="visa" class="icon visa">
                     <img src="./assets/images/visa.svg" class="visa-icon" />
                   </label>
@@ -80,6 +93,7 @@
                             </div>
                             <div class="card">
                                 <input type="radio" id="visa" name="method" value="cash" />
+                                <span class="radio__control"></span>
                                 <label for="cash" class="icon cash">
                     <img
                       src="./assets/images/cash-on-delivery.svg"
