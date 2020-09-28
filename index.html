@@ -11,11 +11,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('.card').click(function() {
-                $('.card.active').removeClass("active");
+            $(".card").click(function() {
+                $(".card.active").removeClass("active");
                 $(this).addClass("active");
-                $('.card input').attr('checked', false)
-                $('.card.active input').attr('checked', true)
+                $(".card input").attr("checked", false);
+                $(".card.active input").attr("checked", true);
             });
         });
     </script>
@@ -31,14 +31,14 @@
                 <ul>
                     <li class="inactive">
                         <i class="material-icons">check</i>
-                        <a href="">Billing Address</a>
+                        <a>Billing Address</a>
                     </li>
                     <li class="inactive">
                         <i class="material-icons">check</i>
-                        <a href="">Delivery</a>
+                        <a>Delivery</a>
                     </li>
                     <li class="active">
-                        <a href="">Payment</a>
+                        <a>Payment</a>
                     </li>
                 </ul>
             </nav>
